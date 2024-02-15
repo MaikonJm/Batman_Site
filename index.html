@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Arkham</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/Batman-icon-header.png" onclick="redirectToIndex()">
+        <script>
+            function redirectToIndex() {
+                window.location.href = 'index.html';
+        }
+        </script>
+    <link rel="stylesheet" href="./style/global.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="background">
+        <video loop autoplay muted>
+            <source src="./assets/video/Batman-Arkham-background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="app">
+        <header>
+            <img src="./assets/img/Batman-Arkham-Knight-LogoPNG.png" alt="logo" id="logo">
+
+            <ul class="navigation">
+                <li>
+                    <a href="index.html" class="navigation__link">Home</a>
+                </li>
+                <li>
+                    <a href="story.html" class="navigation__link">Story</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="navigation__link">Gallery</a>
+                </li>
+                <li>
+                    <a href="trailers.html" class="navigation__link">Trailers</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="main__info">
+                <img
+                   data-aos="fade-up"
+                   data-aos-duration="500"
+                   data-aos-easing="ease-in-out"
+                   src="./assets/img/Batiman_Logo_SitePNG.png" 
+                   width="250px" alt=""
+                 />
+
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-out"
+                >
+                    Batman Arkham é uma série de jogos baseada nos quadrinhos Batman. Ela conta a história do
+                    famoso herói conhecido como "Batman" em sua jornada para se tornar o símbolo de Gotham City 
+                    como seu protetor. Com uma longa lista de aliados e inimigos, Batman enfrenta o mal nas ruas 
+                    e super-vilões lunáticos, que fazem de tudo para detê-lo. A série Arkham foi lançada em 2009 
+                    com o jogo Batman: Arkham Asylum e deu início ao Arkhamverse, o universo dos jogos, histórias
+                    em quadrinhos e animações que levam o nome "Arkham". Este universo se passa em um período
+                    mais atual e mostra um Batman mais tecnológico, violento e realista ao comparado com os 
+                    quadrinhos das décadas de 70, 80 e 90. 
+                </p>
+
+            </div>
+
+            <img 
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                src="./assets/img/Batman-render.png" width="580px" alt="">
+
+        </main>
+
+
+    </div>
+
+    <script>
+        document.getElementById('logo').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
